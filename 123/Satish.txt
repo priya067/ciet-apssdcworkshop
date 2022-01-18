@@ -1,0 +1,33 @@
+import  java.io.*;
+import java.util.*;
+class ADD
+{
+public satic void main(String args[])
+{
+int r1,c1,r2,c2,i,j;
+Scanner s=new Scanner (System.in);
+System.out.println("Enter the row of matrix1:");
+r1=s.nextInt();
+System.out.println(Enter the column of matrix1:");
+c1=s.nextInt();
+System.out.println(Enter the column of matrix2:"); 
+r2=s.nextInt();
+System.out.println(Enter the column of matrix2:");
+c2=s.nextInt();
+if(r1==r2&&c1==c2)
+{
+int mat1= new int[r1][c1];
+int mat2=new int[r2][c2];
+int res= new int[r1][c2];
+System.out.println("read the matrix1 elements:");
+for(i=0;i<r1;i++)
+for(j=0;j<c1;j++)
+mat1[i][j]=s.nextInt();
+System.out.println("read the matrix2 elements:");
+for(i=0;i<r2;i++)
+for(j=0;j<c2;j++)
+mat2[i][j]=s.nextInt();
+System.out.println("read resultant matrix is:");
+for(i=0;i<r1;i++)
+for(j=0;j<c2;j++)
+mat2[i][j]=s.nextInt();
